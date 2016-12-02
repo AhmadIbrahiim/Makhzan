@@ -10,26 +10,23 @@ using System.Windows.Forms;
 
 namespace Makhzan
 {
-    public partial class PaymentForm : Form
+    public partial class Form1 : Form
     {
-        public PaymentForm()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void PaymentForm_Load(object sender, EventArgs e)
+        private void Paymentbtn_Click(object sender, EventArgs e)
         {
 
+            new PaymentForm().Show();
+            this.Hide();
         }
 
-        private void tabPage1_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void groupBox16_Enter(object sender, EventArgs e)
-        {
-
+          //     MessageBox.Show();
         }
     }
 }
