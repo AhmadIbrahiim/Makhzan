@@ -5,8 +5,6 @@
     Renaming the file extension or editing the content of this file may   
     cause the file to be unrecognizable by the program.
 -->
-<GenericObjectDataSource DisplayName="Bill" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
-  
-   <TypeInfo>Makhzan.DataSet.Bill, Makhzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
-  
+<GenericObjectDataSource DisplayName="BillDaily" Version="1.0" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+   <TypeInfo>Makhzan.DataSet.BillDaily, Makhzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</TypeInfo>
 </GenericObjectDataSource>

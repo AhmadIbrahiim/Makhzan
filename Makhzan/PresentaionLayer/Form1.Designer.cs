@@ -64,6 +64,7 @@
             this.Couponsbtn.TabIndex = 2;
             this.Couponsbtn.Text = "كوبونات";
             this.Couponsbtn.UseVisualStyleBackColor = true;
+            this.Couponsbtn.Click += new System.EventHandler(this.Couponsbtn_Click);
             // 
             // Form1
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Makhzan.PresentaionLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,15 @@ namespace Makhzan
         private void Form1_Load(object sender, EventArgs e)
         {
           //     MessageBox.Show();
+        }
+
+        private void Couponsbtn_Click(object sender, EventArgs e)
+        {
+          
+
+            Coupons Ob = new Coupons();
+            Ob.Show();
+            this.Hide();
         }
     }
 }

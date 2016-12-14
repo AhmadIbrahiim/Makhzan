@@ -69,21 +69,49 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
             this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tanzeelBtn = new System.Windows.Forms.Button();
+            this.Reminder_txt = new System.Windows.Forms.TextBox();
             this.groupBox17 = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.Bill_Listview = new System.Windows.Forms.ListView();
+            this.Bill_ID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Bill_Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Bill_State = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Payment_Method = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Total_Pirce = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Reminder = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Discount = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.RadioName = new System.Windows.Forms.RadioButton();
             this.button4 = new System.Windows.Forms.Button();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.RadioDate = new System.Windows.Forms.RadioButton();
+            this.RadioBillNumber = new System.Windows.Forms.RadioButton();
+            this.SearchInquire = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.groupBox21 = new System.Windows.Forms.GroupBox();
+            this.ReportLstView = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox22 = new System.Windows.Forms.GroupBox();
+            this.groupBox23 = new System.Windows.Forms.GroupBox();
+            this.TotralReminder = new System.Windows.Forms.TextBox();
+            this.groupBox24 = new System.Windows.Forms.GroupBox();
+            this.TotalEarn = new System.Windows.Forms.TextBox();
+            this.groupBox25 = new System.Windows.Forms.GroupBox();
+            this.TotalBills = new System.Windows.Forms.TextBox();
+            this.groupBox26 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -105,7 +133,17 @@
             this.groupBox18.SuspendLayout();
             this.groupBox19.SuspendLayout();
             this.groupBox17.SuspendLayout();
+            this.groupBox16.SuspendLayout();
             this.groupBox15.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabControl2.SuspendLayout();
+            this.tabPage7.SuspendLayout();
+            this.groupBox21.SuspendLayout();
+            this.groupBox22.SuspendLayout();
+            this.groupBox23.SuspendLayout();
+            this.groupBox24.SuspendLayout();
+            this.groupBox25.SuspendLayout();
+            this.groupBox26.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -278,6 +316,7 @@
             this.groupBox7.TabIndex = 2;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "فتوره";
+            this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
             // 
             // groupBox8
             // 
@@ -525,6 +564,7 @@
             this.tabPage2.Size = new System.Drawing.Size(984, 618);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "الاستعلامات";
+            this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // groupBox18
             // 
@@ -540,8 +580,8 @@
             // 
             // groupBox19
             // 
-            this.groupBox19.Controls.Add(this.button6);
-            this.groupBox19.Controls.Add(this.textBox9);
+            this.groupBox19.Controls.Add(this.tanzeelBtn);
+            this.groupBox19.Controls.Add(this.Reminder_txt);
             this.groupBox19.Font = new System.Drawing.Font("Adobe Arabic", 15F);
             this.groupBox19.Location = new System.Drawing.Point(22, 44);
             this.groupBox19.Name = "groupBox19";
@@ -550,22 +590,27 @@
             this.groupBox19.TabStop = false;
             this.groupBox19.Text = "دفع";
             // 
-            // button6
+            // tanzeelBtn
             // 
-            this.button6.Location = new System.Drawing.Point(6, 23);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(116, 44);
-            this.button6.TabIndex = 1;
-            this.button6.Text = "تنزيل من الحساب";
-            this.button6.UseVisualStyleBackColor = true;
+            this.tanzeelBtn.Location = new System.Drawing.Point(6, 23);
+            this.tanzeelBtn.Name = "tanzeelBtn";
+            this.tanzeelBtn.Size = new System.Drawing.Size(116, 44);
+            this.tanzeelBtn.TabIndex = 1;
+            this.tanzeelBtn.Text = "تنزيل من الحساب";
+            this.tanzeelBtn.UseVisualStyleBackColor = true;
+            this.tanzeelBtn.Click += new System.EventHandler(this.tanzeelBtn_Click);
             // 
-            // textBox9
+            // Reminder_txt
             // 
-            this.textBox9.Font = new System.Drawing.Font("Adobe Arabic", 25F);
-            this.textBox9.Location = new System.Drawing.Point(128, 23);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(169, 44);
-            this.textBox9.TabIndex = 0;
+            this.Reminder_txt.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Reminder_txt.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Reminder_txt.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Reminder_txt.Location = new System.Drawing.Point(128, 23);
+            this.Reminder_txt.Name = "Reminder_txt";
+            this.Reminder_txt.Size = new System.Drawing.Size(169, 44);
+            this.Reminder_txt.TabIndex = 0;
+            this.Reminder_txt.Text = "0";
+            this.Reminder_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox17
             // 
@@ -591,6 +636,7 @@
             // 
             // groupBox16
             // 
+            this.groupBox16.Controls.Add(this.Bill_Listview);
             this.groupBox16.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox16.Font = new System.Drawing.Font("Adobe Arabic", 10F);
             this.groupBox16.Location = new System.Drawing.Point(12, 137);
@@ -600,13 +646,71 @@
             this.groupBox16.TabStop = false;
             this.groupBox16.Text = "تفاصيل عملية البحث";
             // 
+            // Bill_Listview
+            // 
+            this.Bill_Listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Bill_ID,
+            this.Bill_Date,
+            this.Bill_State,
+            this.Payment_Method,
+            this.Total_Pirce,
+            this.Reminder,
+            this.Discount});
+            this.Bill_Listview.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Bill_Listview.Font = new System.Drawing.Font("Arial", 10F);
+            this.Bill_Listview.Location = new System.Drawing.Point(3, 18);
+            this.Bill_Listview.Name = "Bill_Listview";
+            this.Bill_Listview.Size = new System.Drawing.Size(954, 273);
+            this.Bill_Listview.TabIndex = 0;
+            this.Bill_Listview.UseCompatibleStateImageBehavior = false;
+            this.Bill_Listview.SelectedIndexChanged += new System.EventHandler(this.Bill_Listview_SelectedIndexChanged);
+            this.Bill_Listview.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Bill_Listview_MouseDoubleClick);
+            // 
+            // Bill_ID
+            // 
+            this.Bill_ID.Text = "رقم الفتوره";
+            this.Bill_ID.Width = 100;
+            // 
+            // Bill_Date
+            // 
+            this.Bill_Date.Text = "تاريخ الفاتوره";
+            this.Bill_Date.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Bill_Date.Width = 150;
+            // 
+            // Bill_State
+            // 
+            this.Bill_State.Text = "حالة الفتوره";
+            this.Bill_State.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Bill_State.Width = 100;
+            // 
+            // Payment_Method
+            // 
+            this.Payment_Method.Text = "طريقه الدفع";
+            this.Payment_Method.Width = 150;
+            // 
+            // Total_Pirce
+            // 
+            this.Total_Pirce.Text = "الخصم";
+            this.Total_Pirce.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Total_Pirce.Width = 200;
+            // 
+            // Reminder
+            // 
+            this.Reminder.Text = "المدفوع";
+            this.Reminder.Width = 200;
+            // 
+            // Discount
+            // 
+            this.Discount.Text = "الباقي";
+            this.Discount.Width = 1200;
+            // 
             // groupBox15
             // 
-            this.groupBox15.Controls.Add(this.radioButton3);
+            this.groupBox15.Controls.Add(this.RadioName);
             this.groupBox15.Controls.Add(this.button4);
-            this.groupBox15.Controls.Add(this.radioButton2);
-            this.groupBox15.Controls.Add(this.radioButton1);
-            this.groupBox15.Controls.Add(this.textBox8);
+            this.groupBox15.Controls.Add(this.RadioDate);
+            this.groupBox15.Controls.Add(this.RadioBillNumber);
+            this.groupBox15.Controls.Add(this.SearchInquire);
             this.groupBox15.Font = new System.Drawing.Font("Adobe Arabic", 15F);
             this.groupBox15.Location = new System.Drawing.Point(132, 12);
             this.groupBox15.Name = "groupBox15";
@@ -615,18 +719,19 @@
             this.groupBox15.TabStop = false;
             this.groupBox15.Text = "بحث";
             // 
-            // radioButton3
+            // RadioName
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton3.Font = new System.Drawing.Font("Adobe Arabic", 20F);
-            this.radioButton3.Location = new System.Drawing.Point(497, 76);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(110, 33);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "اسم العميل";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.RadioName.AutoSize = true;
+            this.RadioName.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RadioName.Font = new System.Drawing.Font("Adobe Arabic", 20F);
+            this.RadioName.Location = new System.Drawing.Point(497, 76);
+            this.RadioName.Name = "RadioName";
+            this.RadioName.Size = new System.Drawing.Size(110, 33);
+            this.RadioName.TabIndex = 4;
+            this.RadioName.TabStop = true;
+            this.RadioName.Text = "اسم العميل";
+            this.RadioName.UseVisualStyleBackColor = true;
+            this.RadioName.CheckedChanged += new System.EventHandler(this.RadioName_CheckedChanged);
             // 
             // button4
             // 
@@ -637,53 +742,149 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "بحث";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // radioButton2
+            // RadioDate
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton2.Font = new System.Drawing.Font("Adobe Arabic", 20F);
-            this.radioButton2.Location = new System.Drawing.Point(361, 76);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(120, 33);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "تاريخ الفتوره";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RadioDate.AutoSize = true;
+            this.RadioDate.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RadioDate.Font = new System.Drawing.Font("Adobe Arabic", 20F);
+            this.RadioDate.Location = new System.Drawing.Point(361, 76);
+            this.RadioDate.Name = "RadioDate";
+            this.RadioDate.Size = new System.Drawing.Size(120, 33);
+            this.RadioDate.TabIndex = 2;
+            this.RadioDate.TabStop = true;
+            this.RadioDate.Text = "تاريخ الفتوره";
+            this.RadioDate.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // RadioBillNumber
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.radioButton1.Font = new System.Drawing.Font("Adobe Arabic", 20F);
-            this.radioButton1.Location = new System.Drawing.Point(228, 76);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(108, 33);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "رقم الفتوره";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadioBillNumber.AutoSize = true;
+            this.RadioBillNumber.Cursor = System.Windows.Forms.Cursors.Default;
+            this.RadioBillNumber.Font = new System.Drawing.Font("Adobe Arabic", 20F);
+            this.RadioBillNumber.Location = new System.Drawing.Point(228, 76);
+            this.RadioBillNumber.Name = "RadioBillNumber";
+            this.RadioBillNumber.Size = new System.Drawing.Size(108, 33);
+            this.RadioBillNumber.TabIndex = 1;
+            this.RadioBillNumber.TabStop = true;
+            this.RadioBillNumber.Text = "رقم الفتوره";
+            this.RadioBillNumber.UseVisualStyleBackColor = true;
             // 
-            // textBox8
+            // SearchInquire
             // 
-            this.textBox8.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBox8.Font = new System.Drawing.Font("Adobe Arabic", 25F);
-            this.textBox8.Location = new System.Drawing.Point(138, 28);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(550, 44);
-            this.textBox8.TabIndex = 0;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.SearchInquire.Cursor = System.Windows.Forms.Cursors.Default;
+            this.SearchInquire.Font = new System.Drawing.Font("Adobe Arabic", 25F);
+            this.SearchInquire.Location = new System.Drawing.Point(138, 28);
+            this.SearchInquire.Name = "SearchInquire";
+            this.SearchInquire.Size = new System.Drawing.Size(550, 44);
+            this.SearchInquire.TabIndex = 0;
+            this.SearchInquire.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tabPage3
             // 
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tabPage3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage3.Controls.Add(this.tabControl2);
             this.tabPage3.Location = new System.Drawing.Point(4, 44);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(984, 618);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "تقارير";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPage7);
+            this.tabControl2.Controls.Add(this.tabPage8);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Font = new System.Drawing.Font("Adobe Arabic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl2.Location = new System.Drawing.Point(3, 3);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(976, 610);
+            this.tabControl2.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
+            this.tabControl2.TabIndex = 0;
+            this.tabControl2.Tag = "";
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage7.Controls.Add(this.groupBox22);
+            this.tabPage7.Controls.Add(this.label1);
+            this.tabPage7.Controls.Add(this.groupBox21);
+            this.tabPage7.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage7.Location = new System.Drawing.Point(4, 30);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(968, 576);
+            this.tabPage7.TabIndex = 0;
+            this.tabPage7.Text = "التقارير اليوميه";
+            // 
+            // groupBox21
+            // 
+            this.groupBox21.Controls.Add(this.ReportLstView);
+            this.groupBox21.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox21.Location = new System.Drawing.Point(3, 86);
+            this.groupBox21.Name = "groupBox21";
+            this.groupBox21.Size = new System.Drawing.Size(959, 222);
+            this.groupBox21.TabIndex = 0;
+            this.groupBox21.TabStop = false;
+            this.groupBox21.Text = "تقارير يوميه";
+            // 
+            // ReportLstView
+            // 
+            this.ReportLstView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11});
+            this.ReportLstView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ReportLstView.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ReportLstView.Location = new System.Drawing.Point(3, 18);
+            this.ReportLstView.Name = "ReportLstView";
+            this.ReportLstView.Size = new System.Drawing.Size(953, 201);
+            this.ReportLstView.TabIndex = 0;
+            this.ReportLstView.UseCompatibleStateImageBehavior = false;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "رقم الفتوره";
+            this.columnHeader7.Width = 200;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "اسم العميل";
+            this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader8.Width = 200;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "المدفوع";
+            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader9.Width = 200;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "اجمالي الفتوره";
+            this.columnHeader10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader10.Width = 200;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "الباقي";
+            this.columnHeader11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader11.Width = 200;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage8.Location = new System.Drawing.Point(4, 30);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(968, 576);
+            this.tabPage8.TabIndex = 1;
+            this.tabPage8.Text = "التقارير الثانويه";
             // 
             // tabPage4
             // 
@@ -714,6 +915,117 @@
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(404, 47);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 22);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "ملخص مبيعات اليوم ";
+            // 
+            // groupBox22
+            // 
+            this.groupBox22.Controls.Add(this.groupBox26);
+            this.groupBox22.Controls.Add(this.groupBox25);
+            this.groupBox22.Controls.Add(this.groupBox24);
+            this.groupBox22.Controls.Add(this.groupBox23);
+            this.groupBox22.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox22.Location = new System.Drawing.Point(6, 311);
+            this.groupBox22.Name = "groupBox22";
+            this.groupBox22.Size = new System.Drawing.Size(953, 95);
+            this.groupBox22.TabIndex = 2;
+            this.groupBox22.TabStop = false;
+            this.groupBox22.Text = "تفاصيل";
+            // 
+            // groupBox23
+            // 
+            this.groupBox23.Controls.Add(this.TotralReminder);
+            this.groupBox23.Font = new System.Drawing.Font("Adobe Arabic", 12F);
+            this.groupBox23.Location = new System.Drawing.Point(764, 13);
+            this.groupBox23.Name = "groupBox23";
+            this.groupBox23.Size = new System.Drawing.Size(183, 73);
+            this.groupBox23.TabIndex = 2;
+            this.groupBox23.TabStop = false;
+            this.groupBox23.Text = "اجمال الباقي";
+            // 
+            // TotralReminder
+            // 
+            this.TotralReminder.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotralReminder.Enabled = false;
+            this.TotralReminder.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.TotralReminder.Location = new System.Drawing.Point(6, 26);
+            this.TotralReminder.Name = "TotralReminder";
+            this.TotralReminder.Size = new System.Drawing.Size(160, 35);
+            this.TotralReminder.TabIndex = 0;
+            this.TotralReminder.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox24
+            // 
+            this.groupBox24.Controls.Add(this.TotalEarn);
+            this.groupBox24.Font = new System.Drawing.Font("Adobe Arabic", 12F);
+            this.groupBox24.Location = new System.Drawing.Point(505, 13);
+            this.groupBox24.Name = "groupBox24";
+            this.groupBox24.Size = new System.Drawing.Size(250, 73);
+            this.groupBox24.TabIndex = 3;
+            this.groupBox24.TabStop = false;
+            this.groupBox24.Text = "اجمالي ماتم تحصيله";
+            // 
+            // TotalEarn
+            // 
+            this.TotalEarn.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalEarn.Enabled = false;
+            this.TotalEarn.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.TotalEarn.Location = new System.Drawing.Point(11, 26);
+            this.TotalEarn.Name = "TotalEarn";
+            this.TotalEarn.Size = new System.Drawing.Size(227, 35);
+            this.TotalEarn.TabIndex = 0;
+            this.TotalEarn.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox25
+            // 
+            this.groupBox25.Controls.Add(this.TotalBills);
+            this.groupBox25.Font = new System.Drawing.Font("Adobe Arabic", 12F);
+            this.groupBox25.Location = new System.Drawing.Point(248, 13);
+            this.groupBox25.Name = "groupBox25";
+            this.groupBox25.Size = new System.Drawing.Size(251, 73);
+            this.groupBox25.TabIndex = 4;
+            this.groupBox25.TabStop = false;
+            this.groupBox25.Text = "اجمالي عدد الفواتير";
+            // 
+            // TotalBills
+            // 
+            this.TotalBills.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TotalBills.Enabled = false;
+            this.TotalBills.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold);
+            this.TotalBills.Location = new System.Drawing.Point(11, 26);
+            this.TotalBills.Name = "TotalBills";
+            this.TotalBills.Size = new System.Drawing.Size(228, 35);
+            this.TotalBills.TabIndex = 0;
+            this.TotalBills.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // groupBox26
+            // 
+            this.groupBox26.Controls.Add(this.button2);
+            this.groupBox26.Font = new System.Drawing.Font("Adobe Arabic", 12F);
+            this.groupBox26.Location = new System.Drawing.Point(58, 13);
+            this.groupBox26.Name = "groupBox26";
+            this.groupBox26.Size = new System.Drawing.Size(184, 73);
+            this.groupBox26.TabIndex = 5;
+            this.groupBox26.TabStop = false;
+            this.groupBox26.Text = "طباعه التقرير";
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(35, 24);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(98, 41);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "طباعه تقرير";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // PaymentForm
             // 
@@ -757,8 +1069,22 @@
             this.groupBox19.ResumeLayout(false);
             this.groupBox19.PerformLayout();
             this.groupBox17.ResumeLayout(false);
+            this.groupBox16.ResumeLayout(false);
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabControl2.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
+            this.groupBox21.ResumeLayout(false);
+            this.groupBox22.ResumeLayout(false);
+            this.groupBox23.ResumeLayout(false);
+            this.groupBox23.PerformLayout();
+            this.groupBox24.ResumeLayout(false);
+            this.groupBox24.PerformLayout();
+            this.groupBox25.ResumeLayout(false);
+            this.groupBox25.PerformLayout();
+            this.groupBox26.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -802,15 +1128,15 @@
         private System.Windows.Forms.ComboBox PaymentMethodComob;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton RadioName;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.RadioButton RadioDate;
+        private System.Windows.Forms.RadioButton RadioBillNumber;
+        private System.Windows.Forms.TextBox SearchInquire;
         private System.Windows.Forms.GroupBox groupBox18;
         private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button tanzeelBtn;
+        private System.Windows.Forms.TextBox Reminder_txt;
         private System.Windows.Forms.GroupBox groupBox17;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.GroupBox groupBox20;
@@ -820,5 +1146,33 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ListView Bill_Listview;
+        private System.Windows.Forms.ColumnHeader Bill_ID;
+        private System.Windows.Forms.ColumnHeader Bill_Date;
+        private System.Windows.Forms.ColumnHeader Bill_State;
+        private System.Windows.Forms.ColumnHeader Payment_Method;
+        private System.Windows.Forms.ColumnHeader Total_Pirce;
+        private System.Windows.Forms.ColumnHeader Reminder;
+        private System.Windows.Forms.ColumnHeader Discount;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.GroupBox groupBox21;
+        private System.Windows.Forms.ListView ReportLstView;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.GroupBox groupBox22;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox25;
+        private System.Windows.Forms.TextBox TotalBills;
+        private System.Windows.Forms.GroupBox groupBox24;
+        private System.Windows.Forms.TextBox TotalEarn;
+        private System.Windows.Forms.GroupBox groupBox23;
+        private System.Windows.Forms.TextBox TotralReminder;
+        private System.Windows.Forms.GroupBox groupBox26;
+        private System.Windows.Forms.Button button2;
     }
 }

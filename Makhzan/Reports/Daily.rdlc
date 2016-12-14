@@ -6,35 +6,37 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>1in</Width>
+              <Width>1.26042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.58448in</Width>
+              <Width>1.26042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.72418in</Width>
+              <Width>1.26042in</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>1.72418in</Width>
+              <Width>1.26042in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.26042in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.30208in</Height>
+              <Height>0.32292in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox411">
+                    <Textbox Name="Textbox3">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>السعر</Value>
+                              <Value>رقم الفتوره</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -43,7 +45,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox411</rd:DefaultName>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -59,17 +61,16 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox109">
+                    <Textbox Name="Textbox5">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>سعر الطن</Value>
+                              <Value>اسم العميل</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -78,7 +79,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox109</rd:DefaultName>
+                      <rd:DefaultName>Textbox5</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -94,17 +95,16 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox111">
+                    <Textbox Name="Textbox9">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الكميه</Value>
+                              <Value>اجمالي المدفوع</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -113,7 +113,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox111</rd:DefaultName>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -129,17 +129,16 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox113">
+                    <Textbox Name="Textbox11">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>الصنف</Value>
+                              <Value>اجمالى الفتوره</Value>
                               <Style>
-                                <FontSize>12pt</FontSize>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
@@ -147,19 +146,42 @@
                             <TextAlign>Center</TextAlign>
                           </Style>
                         </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>الباقي</Value>
                               <Style>
-                                <FontWeight>Bold</FontWeight>
+                                <FontSize>14pt</FontSize>
                               </Style>
                             </TextRun>
                           </TextRuns>
-                          <Style />
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox113</rd:DefaultName>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -180,14 +202,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="TotalPrice">
+                    <Textbox Name="Bill_ID">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!TotalPrice.Value</Value>
+                              <Value>=Fields!Bill_ID.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -196,7 +218,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>TotalPrice</rd:DefaultName>
+                      <rd:DefaultName>Bill_ID</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -212,14 +234,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Pricer_per_Tone">
+                    <Textbox Name="Cust_Name">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Pricer_per_Tone.Value</Value>
+                              <Value>=Fields!Cust_Name.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -228,7 +250,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Pricer_per_Tone</rd:DefaultName>
+                      <rd:DefaultName>Cust_Name</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -244,14 +266,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Amont">
+                    <Textbox Name="What_He_Pay">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!Amont.Value</Value>
+                              <Value>=Fields!What_He_Pay.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -260,7 +282,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Amont</rd:DefaultName>
+                      <rd:DefaultName>What_He_Pay</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -276,14 +298,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="ProductName">
+                    <Textbox Name="TotalPriceForBill1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=Fields!ProductName.Value</Value>
+                              <Value>=Fields!TotalPriceForBill.Value</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -292,7 +314,39 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>ProductName</rd:DefaultName>
+                      <rd:DefaultName>TotalPriceForBill1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="reminder">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!reminder.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>reminder</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -316,6 +370,7 @@
             <TablixMember />
             <TablixMember />
             <TablixMember />
+            <TablixMember />
           </TablixMembers>
         </TablixColumnHierarchy>
         <TablixRowHierarchy>
@@ -329,44 +384,38 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSet1</DataSetName>
-        <Top>0.47998in</Top>
-        <Height>0.55208in</Height>
-        <Width>6.03284in</Width>
+        <Top>0.70708in</Top>
+        <Height>0.57292in</Height>
+        <Width>6.30208in</Width>
         <Style>
           <Border>
             <Style>None</Style>
-            <Width>3pt</Width>
           </Border>
         </Style>
       </Tablix>
-      <Textbox Name="Textbox395">
+      <Textbox Name="Textbox13">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>طريقة الدفع :  </Value>
+                <Value>التقارير اليوميه</Value>
                 <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=First(Fields!PaymentMethod.Value, "DataSet1")</Value>
-                <Style>
+                  <FontSize>20pt</FontSize>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Right</TextAlign>
+              <TextAlign>Center</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox395</rd:DefaultName>
-        <Top>1.60433in</Top>
-        <Height>0.15625in</Height>
-        <Width>6.02549in</Width>
+        <rd:DefaultName>Textbox13</rd:DefaultName>
+        <Left>2.52083in</Left>
+        <Height>0.35417in</Height>
+        <Width>1.58333in</Width>
         <ZIndex>1</ZIndex>
         <Style>
           <Border>
@@ -378,40 +427,25 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Textbox396">
+      <Textbox Name="Textbox14">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value> قيمة الخصم : </Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=Sum(Fields!Discount.Value, "DataSet1")</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value> : جنيه</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
+                <Value>=Globals!ExecutionTime</Value>
+                <Style />
               </TextRun>
             </TextRuns>
-            <Style>
-              <TextAlign>Right</TextAlign>
-            </Style>
+            <Style />
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox395</rd:DefaultName>
-        <Top>1.35497in</Top>
-        <Height>0.1875in</Height>
-        <Width>6.02549in</Width>
+        <rd:DefaultName>Textbox14</rd:DefaultName>
+        <Top>0.38764in</Top>
+        <Left>2.27083in</Left>
+        <Height>0.25in</Height>
+        <Width>2.03125in</Width>
         <ZIndex>2</ZIndex>
         <Style>
           <Border>
@@ -423,26 +457,20 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Textbox397">
+      <Textbox Name="Textbox15">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>اجمالي المطلوب :</Value>
+                <Value>=First(Fields!TotalEarn.Value, "DataSet1")</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
               <TextRun>
-                <Value>=Sum(Fields!TotalPrice.Value, "DataSet1")</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value> : جنيه</Value>
+                <Value>: اجمالى الدخل</Value>
                 <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
@@ -453,10 +481,11 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox395</rd:DefaultName>
-        <Top>1.10497in</Top>
-        <Height>0.16667in</Height>
-        <Width>6.02549in</Width>
+        <rd:DefaultName>Textbox15</rd:DefaultName>
+        <Top>1.45708in</Top>
+        <Left>5.01042in</Left>
+        <Height>0.25in</Height>
+        <Width>1.29167in</Width>
         <ZIndex>3</ZIndex>
         <Style>
           <Border>
@@ -468,16 +497,21 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Textbox120">
+      <Textbox Name="Textbox16">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>="فاتورة السيد"+" / "+First(Fields!Customer_Name.Value, "DataSet1")</Value>
+                <Value>=First(Fields!TotalReminder.Value, "DataSet1")</Value>
                 <Style>
-                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+              <TextRun>
+                <Value>:اجمالى الباقي</Value>
+                <Style>
                   <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
@@ -487,11 +521,11 @@
             </Style>
           </Paragraph>
         </Paragraphs>
-        <rd:DefaultName>Textbox120</rd:DefaultName>
-        <Top>0.03554in</Top>
-        <Left>3.42266in</Left>
+        <rd:DefaultName>Textbox16</rd:DefaultName>
+        <Top>1.72097in</Top>
+        <Left>4.95833in</Left>
         <Height>0.25in</Height>
-        <Width>2.51484in</Width>
+        <Width>1.34375in</Width>
         <ZIndex>4</ZIndex>
         <Style>
           <Border>
@@ -503,34 +537,35 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Text11">
+      <Textbox Name="Textbox17">
         <CanGrow>true</CanGrow>
         <KeepTogether>true</KeepTogether>
         <Paragraphs>
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>فاتورة رقم : </Value>
+                <Value>=First(Fields!totalBills.Value, "DataSet1")</Value>
                 <Style>
-                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
               <TextRun>
-                <Value>=First(Fields!Bill_ID.Value, "DataSet1")</Value>
+                <Value>:عدد الفواتير</Value>
                 <Style>
-                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
                 </Style>
               </TextRun>
             </TextRuns>
             <Style>
-              <TextAlign>Left</TextAlign>
+              <TextAlign>Right</TextAlign>
             </Style>
           </Paragraph>
         </Paragraphs>
-        <Top>0.01777in</Top>
-        <Left>0.125in</Left>
+        <rd:DefaultName>Textbox17</rd:DefaultName>
+        <Top>1.95708in</Top>
+        <Left>5.04167in</Left>
         <Height>0.25in</Height>
-        <Width>2.06112in</Width>
+        <Width>1.26042in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -542,140 +577,11 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="Textbox398">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>حالة الفتوره : </Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=First(Fields!Bill_State.Value, "DataSet1")</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value xml:space="preserve"> </Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Right</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox395</rd:DefaultName>
-        <Top>1.84069in</Top>
-        <Left>0.00368in</Left>
-        <Height>0.16667in</Height>
-        <Width>6.02549in</Width>
-        <ZIndex>6</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox399">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> الباقي :</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=First(Fields!Reminder.Value, "DataSet1")</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Right</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox395</rd:DefaultName>
-        <Top>2.20874in</Top>
-        <Height>0.16667in</Height>
-        <Width>6.02549in</Width>
-        <ZIndex>7</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
-      <Textbox Name="Textbox400">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value> المدفعوع : </Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-              <TextRun>
-                <Value>=First(Fields!WhatHePay.Value, "DataSet1")</Value>
-                <Style>
-                  <FontWeight>Bold</FontWeight>
-                </Style>
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Right</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>Textbox395</rd:DefaultName>
-        <Top>2.02124in</Top>
-        <Left>0.00735in</Left>
-        <Height>0.14583in</Height>
-        <Width>6.02549in</Width>
-        <ZIndex>8</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
-    <Height>5.06986in</Height>
-    <Style>
-      <Border>
-        <Style>None</Style>
-      </Border>
-    </Style>
+    <Height>3.1875in</Height>
+    <Style />
   </Body>
-  <Width>6.03553in</Width>
+  <Width>6.41542in</Width>
   <Page>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
@@ -690,7 +596,7 @@
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>418d8ef9-8ba3-40e6-a506-630c959dbac9</rd:DataSourceID>
+      <rd:DataSourceID>a40bf6b7-e8c2-494f-9551-02638832c31a</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
@@ -700,58 +606,46 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Amont">
-          <DataField>Amont</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="Bill_ID">
           <DataField>Bill_ID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Bill_State">
-          <DataField>Bill_State</DataField>
+        <Field Name="Cust_Name">
+          <DataField>Cust_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Customer_Name">
-          <DataField>Customer_Name</DataField>
+        <Field Name="reminder">
+          <DataField>reminder</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Discount">
-          <DataField>Discount</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PaymentMethod">
-          <DataField>PaymentMethod</DataField>
+        <Field Name="totalBills">
+          <DataField>totalBills</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Pricer_per_Tone">
-          <DataField>Pricer_per_Tone</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="ProductName">
-          <DataField>ProductName</DataField>
+        <Field Name="TotalEarn">
+          <DataField>TotalEarn</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Reminder">
-          <DataField>Reminder</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+        <Field Name="TotalPriceForBill">
+          <DataField>TotalPriceForBill</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TotalPrice">
-          <DataField>TotalPrice</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+        <Field Name="TotalReminder">
+          <DataField>TotalReminder</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="WhatHePay">
-          <DataField>WhatHePay</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
+        <Field Name="What_He_Pay">
+          <DataField>What_He_Pay</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
         <rd:DataSetName>Makhzan.DataSet</rd:DataSetName>
-        <rd:TableName>Bill</rd:TableName>
-        <rd:ObjectDataSourceType>Makhzan.DataSet.Bill, Makhzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+        <rd:TableName>BillDaily</rd:TableName>
+        <rd:ObjectDataSourceType>Makhzan.DataSet.BillDaily, Makhzan, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportID>5e98c9c3-1294-4a5c-9a6f-d180c793cdba</rd:ReportID>
+  <rd:ReportID>edf0008c-6750-4c96-9612-eb02a7fe66ad</rd:ReportID>
 </Report>

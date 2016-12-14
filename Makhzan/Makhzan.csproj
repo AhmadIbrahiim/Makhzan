@@ -50,7 +50,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PresentaionLayer\Coupons.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PresentaionLayer\Coupons.Designer.cs">
+      <DependentUpon>Coupons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\DailyReprot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\DailyReprot.Designer.cs">
+      <DependentUpon>DailyReprot.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataAccessLayer\Database.cs" />
+    <Compile Include="DataSet\BillDaily.cs" />
     <Compile Include="DataSet\BillProducts.cs" />
     <Compile Include="PresentaionLayer\Form1.cs">
       <SubType>Form</SubType>
@@ -72,6 +85,9 @@
     <Compile Include="Reports\Reports.Designer.cs">
       <DependentUpon>Reports.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PresentaionLayer\Coupons.resx">
+      <DependentUpon>Coupons.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Bill.rdlc" />
     <EmbeddedResource Include="PresentaionLayer\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -88,10 +104,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reports\Daily.rdlc" />
+    <EmbeddedResource Include="Reports\DailyReprot.resx">
+      <DependentUpon>DailyReprot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\Reports.resx">
       <DependentUpon>Reports.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\DataSources\Makhzan.DataSet.Bill.datasource" />
+    <None Include="Properties\DataSources\Makhzan.DataSet.BillDaily.datasource" />
+    <None Include="Properties\DataSources\Makhzan.DataSet.BillDailyReposiotry.datasource" />
     <None Include="Properties\DataSources\Makhzan.DataSet.BillRepository.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
